@@ -5,8 +5,8 @@ var webrtc = new SimpleWebRTC({
   remoteVideosEl: 'remoteVideos',
   // immediately ask for camera access
   autoRequestMedia: true,
-  //url: "shielded-brushlands-2364.herokuapp.com"
-  url: 'http://localhost:1234/?user_id=' + window.location.search.match(/user_id=(.)$/)[1]
+  url: "shielded-brushlands-2364.herokuapp.com" + window.location.search.match(/user_id=(.)$/)[1]
+  //url: 'http://localhost:1234/?user_id=' + window.location.search.match(/user_id=(.)$/)[1]
 });
 
 // we have to wait until it's ready
